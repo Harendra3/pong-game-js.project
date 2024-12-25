@@ -1,0 +1,96 @@
+body {
+  font-family: "Press Start 2P", serif;
+  height: 100dvh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  color: rgb(255, 229, 229, 0.9);
+  overflow: hidden;
+}
+.gameArea {
+  position: absolute;
+  width: 600px;
+  height: 400px;
+  background: rgb(7, 26, 49, 0.6);
+  top: 182px;
+  border: #919bbec7 10px solid;
+  border-radius: 4px;
+  backdrop-filter: blur(4px);
+  transform: perspective(1000px) rotateX(33deg) scaleX(0.54) scaleY(0.84);
+}
+.bg {
+  position: absolute;
+  height: 1000px;
+  z-index: -1;
+}
+.paddle {
+  height: 100px;
+  width: 20px;
+  background: white;
+  position: absolute;
+  top: 150px;
+}
+.paddle2 {
+  right: 0;
+}
+.ball {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background: white;
+  border-radius: 20px;
+  left: 290px;
+  top: 190px;
+  box-shadow: 1px 2.5px 1px white;
+}
+.net {
+  position: absolute;
+  border-right: 8px white dotted;
+  height: 96%;
+  top: 2%;
+  left: calc(50% - 4px);
+}
+.title {
+  position: absolute;
+  top: 88px;
+  font-size: 26px;
+}
+.score {
+  position: absolute;
+  top: 88px;
+  display: flex;
+  height: 60px;
+  width: 60px;
+  justify-content: center;
+  align-items: center;
+}
+.player1score {
+  left: calc(50% - 200px);
+}
+.player2score {
+  right: calc(50% - 200px);
+}
+.starttext {
+  position: absolute;
+  display: block;
+  margin: 0;
+  top: 65%;
+  z-index: 1;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: black;
+  border-radius: 4px;
+  padding: 10px;
+}
+.vignett {
+  height: 1000dvh;
+  width: 100dvh;
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
